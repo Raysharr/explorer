@@ -1,0 +1,100 @@
+header.page-header
+	a.page-header-logo
+		img.page-header-logo-without-text(src="/img/header/btcv-logo.svg" alt="logo")
+		img.page-header-logo-with-text(src="/img/header/btcv-logo-with-text.svg" alt="logo")
+	
+	aside.page-header-social-media-icons
+		a(href="https://twitter.com/vaultbitcoin" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/twitter.svg" alt="twitter")
+		a(href="https://t.me/Bitcoin_Vault" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/telegram.svg" alt="telegram")
+		a(href="https://medium.com/bitcoin-vault-btcv" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/medium.svg" alt="medium")
+		a(href="https://www.facebook.com/bitcoinvaultofficial" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/facebook.svg" alt="facebook")
+		a(href="https://www.instagram.com/bitcoinvaultofficial" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/instagram.svg" alt="instagram")
+		a(href="https://www.youtube.com/c/BitcoinVault" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/youtube.svg" alt="youtube")
+		a(href="https://github.com/bitcoinvault" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/github.svg" alt="github")
+		a(href="https://explorer.bitcoinvault.global" target="_blank" rel="noopener noreferrer")
+			img(src="/img/header/explorer.svg" alt="explorer")
+
+	button.page-header-menu-icon(type="button")
+		img(src="/img/header/menu-hamburger.svg" alt="menu hamburger icon")
+		
+	div.page-header-menu-container
+		div.page-header-menu-page-cover
+
+		img.page-header-menu-close(src="/img/header/menu-close.svg" alt="menu close icon")
+
+		nav.page-header-menu-nav
+			div.page-header-social-media-icons-container
+				aside.page-header-social-media-icons
+					a(href="https://twitter.com/vaultbitcoin" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/twitter.svg" alt="twitter")
+					a(href="https://t.me/Bitcoin_Vault" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/telegram.svg" alt="telegram")
+					a(href="https://medium.com/bitcoin-vault-btcv" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/medium.svg" alt="medium")
+					a(href="https://www.facebook.com/bitcoinvaultofficial" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/facebook.svg" alt="facebook")
+					a(href="https://www.instagram.com/bitcoinvaultofficial" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/instagram.svg" alt="instagram")
+					a(href="https://www.youtube.com/c/BitcoinVault" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/youtube.svg" alt="youtube")
+					a(href="https://github.com/bitcoinvault" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/github.svg" alt="github")
+					a(href="https://explorer.bitcoinvault.global" target="_blank" rel="noopener noreferrer")
+						img(src="/img/header/explorer.svg" alt="explorer")
+
+			ul.page-header-menu-list
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global") Home
+				li.page-header-menu-list-item
+					div.page-header-menu-list-item-title Development
+						button(type="button")
+							img(src="/img/header/chevron-up.svg" alt="chevron icon")
+
+					ul.page-header-menu-sub-list
+						li.page-header-menu-sub-list-item
+							a(href="https://bitcoinvault.global/btcv-explained") BTCV Explained
+						li.page-header-menu-sub-list-item
+							a(href="https://bitcoinvault.global/whitepaper") Whitepaper
+						li.page-header-menu-sub-list-item
+							a(href="https://bitcoinvault.global/roadmap") Roadmap
+						li.page-header-menu-sub-list-item
+							a(href="https://bitcoinvault.global/faq") FAQ
+
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/features") Features
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/ecosystem") Ecosystem
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/tutorials") Education
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/community") Community
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/team-behind") Team Behind
+				li.page-header-menu-list-item
+					a.page-header-menu-list-item-title(href="https://bitcoinvault.global/contact") Contact
+
+script.
+	var hideMenuCointainer = () => {
+		document.querySelector('.page-header-menu-container').classList.remove('visible');
+		document.querySelector('.page-header-menu-icon').classList.remove('hidden');
+	};
+
+	document.querySelector('.page-header-menu-icon').addEventListener('click', (e) => {
+		document.querySelector('.page-header-menu-container').classList.add('visible');
+		document.querySelector('.page-header-menu-icon').classList.add('hidden');
+	});
+
+	document.querySelector('.page-header-menu-close').addEventListener('click', hideMenuCointainer);
+
+	document.querySelector('.page-header-menu-page-cover').addEventListener('click', hideMenuCointainer);
+
+	document.querySelector('.page-header-menu-list-item div.page-header-menu-list-item-title').addEventListener('click', () => {
+		document.querySelector('.page-header-menu-sub-list').classList.toggle('visible');
+	});
