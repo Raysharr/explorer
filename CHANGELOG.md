@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/bitcoinvault/explorer/compare/v1.8.0...v1.9.0) (2021-07-29)
+
+
+### Features
+
+* add header ([0682dea](https://github.com/bitcoinvault/explorer/commit/0682dea164eb1d13ebdcc7a1231af8e4da59e550))
+
 ## [1.8.0](https://github.com/bitcoinvault/explorer/compare/v1.7.0...v1.8.0) (2021-07-19)
 
 
