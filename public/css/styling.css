@@ -324,7 +324,7 @@ footer a:hover {
 
 .page-header-menu-container {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -434,7 +434,7 @@ footer a:hover {
 }
 
 .page-header-menu-close {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   right: 35px;
   top: 20px;
@@ -476,6 +476,10 @@ footer a:hover {
     display: grid;
   }
 
+  .page-header-menu-container {
+    position: fixed;
+  }
+
   .page-header-social-media-icons-container .page-header-social-media-icons {
     display: none;
   }
@@ -512,5 +516,6 @@ footer a:hover {
 
   .page-header-menu-close {
     right: 25px;
+    position: fixed;
   }
 }
